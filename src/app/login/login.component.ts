@@ -26,8 +26,8 @@ export class LoginComponent implements OnInit {
     this.document.getElementById('responsive').setAttribute('href', 'assets/css/responsive_2.css');
   }
 
-  porcoddio(formData) {
-    alert('SUBMIT');
+  onRegisterSubmit(formData) {
+
     this.credenziali.name = formData.value.email;
     this.credenziali.email = formData.value.email;
     this.credenziali.password = formData.value.password;
