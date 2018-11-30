@@ -471,6 +471,99 @@
     </div>
   </div>
 
+  <div class="sw_spectrum_wrapper" *ngIf="step == 5">
+    <div class="container">
+      <div class="row  text-center">
+        <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+          <div class="sw_center_heading_wraper ">
+            <h1>Quale dei seguenti materiali deriva dalla lavorazione di sostanze chimiche generate dal raffinamento del petrolio?</h1>
+            <img src="assets/images/heading_line.png" alt="title">
+          </div>
+        </div>
+
+        <!-- slider start -->
+        <div class="row">
+          <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3">
+
+            <div class="quiz_answer" *ngIf="0 else risposta1">
+              <div (click)="step = step +1; punteggio = punteggio + 20">
+                <h2>
+                  legno                </h2>
+              </div>
+            </div>
+            <ng-template #risposta1>
+              <div class="quiz_answer">
+                <div (click)="step = step +1;">
+                  <h2>
+                    legno
+                  </h2>
+                </div>
+              </div>
+            </ng-template>
+          </div>
+          <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3">
+
+            <div class="quiz_answer" *ngIf="0 else risposta2">
+              <div (click)="step = step +1; punteggio = punteggio + 20">
+                <h2>
+                  carta
+                </h2>
+              </div>
+            </div>
+            <ng-template #risposta2>
+              <div class="quiz_answer">
+                <div (click)="step = step +1;">
+                  <h2>
+                    carta
+                  </h2>
+                </div>
+              </div>
+            </ng-template>
+          </div>
+          <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3">
+
+            <div class="quiz_answer" *ngIf="1 else risposta3">
+              <div (click)="step = step +1; punteggio = punteggio + 20">
+                <h2>
+                  plastica
+                </h2>
+              </div>
+            </div>
+            <ng-template #risposta3>
+              <div class="quiz_answer">
+                <div (click)="step = step +1;">
+                  <h2>
+                    plastica
+                  </h2>
+                </div>
+              </div>
+            </ng-template>
+          </div>
+          <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3">
+
+            <div class="quiz_answer" *ngIf="0 else risposta4">
+              <div (click)="step = step +1; punteggio = punteggio + 20">
+                <h2>
+                  nessuna delle precedenti
+                </h2>
+              </div>
+            </div>
+            <ng-template #risposta4>
+              <div class="quiz_answer">
+                <div (click)="step = step +1;">
+                  <h2>
+                    nessuna delle precedenti
+                  </h2>
+                </div>
+              </div>
+            </ng-template>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 
   <div class="sw_spectrum_wrapper">
     <div class="container">
@@ -483,5 +576,4 @@
       </div>
     </div>
   </div>
-
 </div>

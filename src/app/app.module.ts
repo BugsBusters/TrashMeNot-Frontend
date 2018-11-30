@@ -37,7 +37,7 @@ const routes: Routes = [
     component: ShopComponent
   },
   {
-    path: 'shop/prodotto',
+    path: 'prodotto',
     component: ProdottoComponent
   },
   {
