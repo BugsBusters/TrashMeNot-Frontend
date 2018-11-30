@@ -27,6 +27,14 @@ const routes: Routes = [
     path: 'tips',
     component: BlogComponent
   },
+  {
+    path: 'shop',
+    component: ShopComponent
+  },
+  {
+    path: 'shop/prodotto',
+    component: ProdottoComponent
+  }
 ];
 
 
