@@ -24,8 +24,8 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
-    path: 'blog',
-    component: BlogcomponentComponent
+    path: 'tips',
+    component: BlogComponent
   },
 ];
 
