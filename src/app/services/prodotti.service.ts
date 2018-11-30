@@ -13,7 +13,7 @@ export class ProdottiService {
   }
 
 
-  getAllTips() {
+  getProducts() {
     return this.http.get(this.baseUrl + 'prodotti');
 
   }
