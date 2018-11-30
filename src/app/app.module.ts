@@ -19,6 +19,7 @@ import { BlogComponent } from './blog/blog.component';
 import { HttpClientModule} from '@angular/common/http';
 import { HometipComponent } from './hometip/hometip.component';
 import { HomeprodottoComponent } from './homeprodotto/homeprodotto.component';
+import { ContattiComponent } from './contatti/contatti.component';
 
 const routes: Routes = [
   {
@@ -40,6 +41,10 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent
+  },
+  {
+    path: 'contatti',
+    component: ContattiComponent
   }
 ];
 
@@ -62,7 +67,8 @@ const routes: Routes = [
     TipComponent,
     BlogComponent,
     HometipComponent,
-    HomeprodottoComponent
+    HomeprodottoComponent,
+    ContattiComponent
   ],
   imports: [
     BrowserModule,
