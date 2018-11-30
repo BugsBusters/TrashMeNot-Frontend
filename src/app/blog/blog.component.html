@@ -97,7 +97,7 @@
 
               </ul>
             </div>
-           
+
           </div>
 
         </nav>
@@ -248,7 +248,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
-        <div class="lest_news_box_wrapper">
+        <div *ngFor="let tip of tips" class="lest_news_box_wrapper">
           <div class="lest_news_img_wrapper">
             <img src="assets/images/raccoltadiffblog1.jpg" alt="blog_img">
             <div class="btc_blog_indx_date_wrapper">
@@ -259,55 +259,16 @@
           </div>
           <div class="lest_news_cont_wrapper">
             <div class="sc_blog_date">27 Novembre, 2018</div>
-            <h5><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</a></h5>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae commodo nulla, quis
-              sagittis arcu. In arcu leo, accumsan a ultricies vel, maximus nec nibh. In sit amet
-              consequat nulla.
+            <h5><a href="#">{{tip.titolo}}</a></h5>
+            <br>
+            <br>
+            <p style="float:left">
+              {{tip.descrizione}}<br>
             </p>
 
           </div>
         </div>
-        <div class="lest_news_box_wrapper">
-          <div class="lest_news_img_wrapper">
-            <img src="assets/images/pjct_single_bg.jpg" alt="blog_img">
-            <div class="btc_blog_indx_date_wrapper">
-              <a href="#!" class="waves-effect waves-light waves-ripple" title="Vedi fonte"><i
-                class="fa fa-link"></i></a>
-            </div>
 
-          </div>
-          <div class="lest_news_cont_wrapper">
-            <div class="sc_blog_date">27 Novembre, 2018</div>
-            <h5><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</a></h5>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae commodo nulla, quis
-              sagittis arcu. In arcu leo, accumsan a ultricies vel, maximus nec nibh. In sit amet
-              consequat nulla.
-            </p>
-
-          </div>
-        </div>
-        <div class="lest_news_box_wrapper">
-          <div class="lest_news_img_wrapper">
-            <img src="assets/images/pjct_single_bg.jpg" alt="blog_img">
-            <div class="btc_blog_indx_date_wrapper">
-              <a href="#!" class="waves-effect waves-light waves-ripple" title="Vedi fonte"><i
-                class="fa fa-link"></i></a>
-            </div>
-
-          </div>
-          <div class="lest_news_cont_wrapper">
-            <div class="sc_blog_date">27 Novembre, 2018</div>
-            <h5><a href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit?</a></h5>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vitae commodo nulla, quis
-              sagittis arcu. In arcu leo, accumsan a ultricies vel, maximus nec nibh. In sit amet
-              consequat nulla.
-            </p>
-
-          </div>
-        </div>
 
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 

@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
 import { BlogcomponentComponent } from './blogcomponent/blogcomponent.component';
 import { HomeComponentComponent } from './home-component/home-component.component';
@@ -17,6 +16,7 @@ import { LoginComponent } from './login/login.component';
 import { CartComponent } from './cart/cart.component';
 import { TipComponent } from './tip/tip.component';
 import { BlogComponent } from './blog/blog.component';
+import { HttpClientModule} from '@angular/common/http';
 
 const routes: Routes = [
   {
@@ -50,7 +50,9 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot(routes),
+
   ],
   providers: [],
   bootstrap: [AppComponent]
