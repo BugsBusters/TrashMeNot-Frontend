@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>TrashMeNow</title>
+
+  <title>Trash Me Not</title>
+
   <base href="/">
   <meta name="theme-color" content="#2196f3">
   <link rel="manifest" href="assets/manifest.json">
@@ -26,8 +28,9 @@
   <link rel="stylesheet" type="text/css" href="assets/js/plugin/rs_slider/settings.css"/>
   <link rel="stylesheet" id="style" type="text/css" href="assets/css/style.css"/>
   <link rel="stylesheet" id="responsive" type="text/css" href="assets/css/responsive.css"/>
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon"></head>
 <body>
 <app-root></app-root>
 </body>
@@ -59,6 +62,7 @@
 <script src="assets/js/plugin/rs_slider/revolution.extension.video.min.js"></script>
 <script src="assets/js/custom.js"></script>
 <script src="assets/js/custom_2.js"></script>
+
 
 
 
@@ -108,5 +112,31 @@
     }, 'slow');
   }
 </script>
+
+<script>
+
+  setTimeout(function () {
+
+    var time = 60;
+    var initialOffset = '440';
+    var i = 1;
+
+    /* Need initial run as interval hasn't yet occured... */
+    $('.circle_animation').css('stroke-dashoffset', initialOffset - (1 * (initialOffset / time)));
+
+    var interval = setInterval(function () {
+      $('#timer').text(i);
+      if (i == time) {
+        clearInterval(interval);
+        return;
+      }
+      $('.circle_animation').css('stroke-dashoffset', initialOffset - ((i + 1) * (initialOffset / time)));
+      i++;
+    }, 1000);
+
+  }, 0)
+
+</script>
+
 
 </html>

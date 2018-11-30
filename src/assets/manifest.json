@@ -1,6 +1,6 @@
 {
-  "name": "TrashMeNow",
-  "short_name": "TrashMeNow",
+  "name": "TrashMeNot",
+  "short_name": "TrashMeNot",
   "theme_color": "#4bc45a",
   "background_color": "#2196f3",
   "display": "standalone",

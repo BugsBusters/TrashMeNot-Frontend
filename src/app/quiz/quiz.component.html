@@ -1,0 +1,487 @@
+<div style="position: center; align-content: center">
+  <br>
+  <br>
+  <div class="sw_spectrum_wrapper">
+    <div class="container">
+      <div class="row text-center">
+        <div class="item-clock html">
+          <h2 id="timer">0</h2>
+          <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+            <g>
+              <title>Layer 1</title>
+              <circle id="circle"
+                      class="circle_animation"
+                      r="69.85699" cy="81" cx="81"
+                      stroke-width="8" stroke="#52BF5F" fill="none"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="sw_spectrum_wrapper" *ngIf="step == 1">
+    <div class="container">
+      <div class="row  text-center">
+        <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+          <div class="sw_center_heading_wraper ">
+            <h1>Che cosa è un composto organico?</h1>
+            <img src="assets/images/heading_line.png" alt="title">
+          </div>
+        </div>
+
+        <!-- slider start -->
+        <div class="row">
+          <div class="col-md-3 col-sm-12  col-xs-12 text-center col-lg-3">
+
+            <div class="quiz_answer" *ngIf="0 else risposta1">
+              <div (click)="step = step +1; punteggio = punteggio + 20">
+                <h2>
+                  Un composto in cui nessun atomo di carbonio è unito tramite legame covalente ad atomi di altri elementi;
+                </h2>
+              </div>
+            </div>
+            <ng-template #risposta1>
+              <div class="quiz_answer">
+                <div (click)="step = step +1;">
+                  <h2>
+                    Un composto in cui nessun atomo di carbonio è unito tramite legame covalente ad atomi di altri elementi;
+                  </h2>
+                </div>
+              </div>
+            </ng-template>
+          </div>
+          <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3">
+
+            <div class="quiz_answer" *ngIf="1 else risposta2">
+              <div (click)="step = step +1; punteggio = punteggio + 20">
+                <h2>
+                  Un composto in cui uno o più atomi di carbonio sono uniti tramite legame covalente ad atomi di altri elementi;
+                </h2>
+              </div>
+            </div>
+            <ng-template #risposta2>
+              <div class="quiz_answer">
+                <div (click)="step = step +1;">
+                  <h2>
+                    Un composto in cui uno o più atomi di carbonio sono uniti tramite legame covalente ad atomi di altri elementi;
+                  </h2>
+                </div>
+              </div>
+            </ng-template>
+          </div>
+          <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3">
+
+            <div class="quiz_answer" *ngIf="0 else risposta3">
+              <div (click)="step = step +1; punteggio = punteggio + 20">
+                <h2>
+                  esclusivamente un concime
+                </h2>
+              </div>
+            </div>
+            <ng-template #risposta3>
+              <div class="quiz_answer">
+                <div (click)="step = step +1;">
+                  <h2>
+                    esclusivamente un concime
+                  </h2>
+                </div>
+              </div>
+            </ng-template>
+          </div>
+          <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3">
+
+            <div class="quiz_answer" *ngIf="0 else risposta4">
+              <div (click)="step = step +1; punteggio = punteggio + 20">
+                <h2>
+                  nessuna delle precedenti
+                </h2>
+              </div>
+            </div>
+            <ng-template #risposta4>
+              <div class="quiz_answer">
+                <div (click)="step = step +1;">
+                  <h2>
+                    nessuna delle precedenti
+                  </h2>
+                </div>
+              </div>
+            </ng-template>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sw_spectrum_wrapper" *ngIf="step == 2">
+    <div class="container">
+      <div class="row  text-center">
+        <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+          <div class="sw_center_heading_wraper ">
+            <h1>Quanti anni ci mette un sacchetto di plastica a degradarsi in acqua?</h1>
+            <img src="assets/images/heading_line.png" alt="title">
+          </div>
+        </div>
+
+        <!-- slider start -->
+        <div class="row">
+          <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3">
+
+            <div class="quiz_answer" *ngIf="0 else risposta1">
+              <div (click)="step = step +1; punteggio = punteggio + 20">
+                <h2>
+                  1 anno
+                </h2>
+              </div>
+            </div>
+            <ng-template #risposta1>
+              <div class="quiz_answer">
+                <div (click)="step = step +1;">
+                  <h2>
+                    1 anno
+                  </h2>
+                </div>
+              </div>
+            </ng-template>
+          </div>
+          <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3">
+
+            <div class="quiz_answer" *ngIf="0 else risposta2">
+              <div (click)="step = step +1; punteggio = punteggio + 20">
+                <h2>
+                  10 anni
+                </h2>
+              </div>
+            </div>
+            <ng-template #risposta2>
+              <div class="quiz_answer">
+                <div (click)="step = step +1;">
+                  <h2>
+                    10 anni
+                  </h2>
+                </div>
+              </div>
+            </ng-template>
+          </div>
+          <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3">
+
+            <div class="quiz_answer" *ngIf="1 else risposta3">
+              <div (click)="step = step +1; punteggio = punteggio + 20">
+                <h2>
+                  20 anni
+                </h2>
+              </div>
+            </div>
+            <ng-template #risposta3>
+              <div class="quiz_answer">
+                <div (click)="step = step +1;">
+                  <h2>
+                    20 anni
+                  </h2>
+                </div>
+              </div>
+            </ng-template>
+          </div>
+          <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3">
+
+            <div class="quiz_answer" *ngIf="0 else risposta4">
+              <div (click)="step = step +1; punteggio = punteggio + 20">
+                <h2>
+                  Non si decompone
+                </h2>
+              </div>
+            </div>
+            <ng-template #risposta4>
+              <div class="quiz_answer">
+                <div (click)="step = step +1;">
+                  <h2>
+                    Non si decompone
+                  </h2>
+                </div>
+              </div>
+            </ng-template>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sw_spectrum_wrapper" *ngIf="step == 3">
+    <div class="container">
+      <div class="row  text-center">
+        <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+          <div class="sw_center_heading_wraper ">
+            <h1>Che cosa è una discarica?</h1>
+            <img src="assets/images/heading_line.png" alt="title">
+          </div>
+        </div>
+
+        <!-- slider start -->
+        <div class="row">
+          <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3">
+
+            <div class="quiz_answer" *ngIf="1 else risposta1">
+              <div (click)="step = step +1; punteggio = punteggio + 20">
+                <h2>
+                  è un luogo dove vengono depositati/stoccati in modo non selezionato e permanente i rifiuti                </h2>
+              </div>
+            </div>
+            <ng-template #risposta1>
+              <div class="quiz_answer">
+                <div (click)="step = step +1;">
+                  <h2>
+                    è un luogo dove vengono depositati/stoccati in modo non selezionato e permanente i rifiuti                  </h2>
+                </div>
+              </div>
+            </ng-template>
+          </div>
+          <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3">
+
+            <div class="quiz_answer" *ngIf="0 else risposta2">
+              <div (click)="step = step +1; punteggio = punteggio + 20">
+                <h2>
+                  è un luogo dove vengono depositati/stoccati in modo selezionato i rifiuti                </h2>
+              </div>
+            </div>
+            <ng-template #risposta2>
+              <div class="quiz_answer">
+                <div (click)="step = step +1;">
+                  <h2>
+                    è un luogo dove vengono depositati/stoccati in modo selezionato i rifiuti                  </h2>
+                </div>
+              </div>
+            </ng-template>
+          </div>
+          <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3">
+
+            <div class="quiz_answer" *ngIf="0 else risposta3">
+              <div (click)="step = step +1; punteggio = punteggio + 20">
+                <h2>
+                  è un luogo dove vengono depositati/stoccati in modo selezionato e permanente i rifiuti                </h2>
+              </div>
+            </div>
+            <ng-template #risposta3>
+              <div class="quiz_answer">
+                <div (click)="step = step +1;">
+                  <h2>
+                    è un luogo dove vengono depositati/stoccati in modo selezionato e permanente i rifiuti                  </h2>
+                </div>
+              </div>
+            </ng-template>
+          </div>
+          <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3">
+
+            <div class="quiz_answer" *ngIf="0 else risposta4">
+              <div (click)="step = step +1; punteggio = punteggio + 20">
+                <h2>
+                  nessuna delle precedenti                </h2>
+              </div>
+            </div>
+            <ng-template #risposta4>
+              <div class="quiz_answer">
+                <div (click)="step = step +1;">
+                  <h2>
+                    nessuna delle precedenti                  </h2>
+                </div>
+              </div>
+            </ng-template>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sw_spectrum_wrapper" *ngIf="step == 4">
+    <div class="container">
+      <div class="row  text-center">
+        <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+          <div class="sw_center_heading_wraper ">
+            <h1>In che cosa consiste la proprietà di biodegradabilità dei materiali?</h1>
+            <img src="assets/images/heading_line.png" alt="title">
+          </div>
+        </div>
+
+        <!-- slider start -->
+        <div class="row">
+          <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3">
+
+            <div class="quiz_answer" *ngIf="1 else risposta1">
+              <div (click)="step = step +1; punteggio = punteggio + 20">
+                <h2>
+                  nella loro decomposizione                </h2>
+              </div>
+            </div>
+            <ng-template #risposta1>
+              <div class="quiz_answer">
+                <div (click)="step = step +1;">
+                  <h2>
+                    nella loro decomposizione                  </h2>
+                </div>
+              </div>
+            </ng-template>
+          </div>
+          <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3">
+
+            <div class="quiz_answer" *ngIf="0 else risposta2">
+              <div (click)="step = step +1; punteggio = punteggio + 20">
+                <h2>
+                  nella loro capacità di autorigenerarsi                </h2>
+              </div>
+            </div>
+            <ng-template #risposta2>
+              <div class="quiz_answer">
+                <div (click)="step = step +1;">
+                  <h2>
+                    nella loro capacità di autorigenerarsi                  </h2>
+                </div>
+              </div>
+            </ng-template>
+          </div>
+          <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3">
+
+            <div class="quiz_answer" *ngIf="0 else risposta3">
+              <div (click)="step = step +1; punteggio = punteggio + 20">
+                <h2>
+                  nella loro possibilità di sgretolarsi                </h2>
+              </div>
+            </div>
+            <ng-template #risposta3>
+              <div class="quiz_answer">
+                <div (click)="step = step +1;">
+                  <h2>
+                    nella loro possibilità di sgretolarsi                  </h2>
+                </div>
+              </div>
+            </ng-template>
+          </div>
+          <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3">
+
+            <div class="quiz_answer" *ngIf="0 else risposta4">
+              <div (click)="step = step +1; punteggio = punteggio + 20">
+                <h2>
+                  nessuna delle precedenti                </h2>
+              </div>
+            </div>
+            <ng-template #risposta4>
+              <div class="quiz_answer">
+                <div (click)="step = step +1;">
+                  <h2>
+                    nessuna delle precedenti                  </h2>
+                </div>
+              </div>
+            </ng-template>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sw_spectrum_wrapper" *ngIf="step == 5">
+    <div class="container">
+      <div class="row  text-center">
+        <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+          <div class="sw_center_heading_wraper ">
+            <h1>Quale dei seguenti materiali deriva dalla lavorazione di sostanze chimiche generate dal raffinamento del petrolio?</h1>
+            <img src="assets/images/heading_line.png" alt="title">
+          </div>
+        </div>
+
+        <!-- slider start -->
+        <div class="row">
+          <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3">
+
+            <div class="quiz_answer" *ngIf="0 else risposta1">
+              <div (click)="step = step +1; punteggio = punteggio + 20">
+                <h2>
+                  legno                </h2>
+              </div>
+            </div>
+            <ng-template #risposta1>
+              <div class="quiz_answer">
+                <div (click)="step = step +1;">
+                  <h2>
+                    legno
+                  </h2>
+                </div>
+              </div>
+            </ng-template>
+          </div>
+          <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3">
+
+            <div class="quiz_answer" *ngIf="0 else risposta2">
+              <div (click)="step = step +1; punteggio = punteggio + 20">
+                <h2>
+                  carta
+                </h2>
+              </div>
+            </div>
+            <ng-template #risposta2>
+              <div class="quiz_answer">
+                <div (click)="step = step +1;">
+                  <h2>
+                    carta
+                  </h2>
+                </div>
+              </div>
+            </ng-template>
+          </div>
+          <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3">
+
+            <div class="quiz_answer" *ngIf="1 else risposta3">
+              <div (click)="step = step +1; punteggio = punteggio + 20">
+                <h2>
+                 plastica
+                </h2>
+              </div>
+            </div>
+            <ng-template #risposta3>
+              <div class="quiz_answer">
+                <div (click)="step = step +1;">
+                  <h2>
+                    plastica
+                  </h2>
+                </div>
+              </div>
+            </ng-template>
+          </div>
+          <div class="col-md-3 col-sm-12 col-xs-12 col-lg-3">
+
+            <div class="quiz_answer" *ngIf="0 else risposta4">
+              <div (click)="step = step +1; punteggio = punteggio + 20">
+                <h2>
+                  nessuna delle precedenti
+                </h2>
+              </div>
+            </div>
+            <ng-template #risposta4>
+              <div class="quiz_answer">
+                <div (click)="step = step +1;">
+                  <h2>
+                    nessuna delle precedenti
+                  </h2>
+                </div>
+              </div>
+            </ng-template>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="sw_spectrum_wrapper">
+    <div class="container">
+      <div class="row text-center">
+        <div class="sw_center_heading_wraper">
+          <img src="assets/images/heading_line.png" alt="title">
+          <h2>Domanda {{step}} di 10</h2>
+          <h2>Punteggio {{punteggio}} su 100</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
