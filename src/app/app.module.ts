@@ -20,6 +20,8 @@ import { HttpClientModule} from '@angular/common/http';
 import { HometipComponent } from './hometip/hometip.component';
 import { HomeprodottoComponent } from './homeprodotto/homeprodotto.component';
 import { ContattiComponent } from './contatti/contatti.component';
+import { QuizComponent } from './quiz/quiz.component';
+import { StartQuizComponent } from './start-quiz/start-quiz.component';
 
 const routes: Routes = [
   {
@@ -45,6 +47,14 @@ const routes: Routes = [
   {
     path: 'contatti',
     component: ContattiComponent
+  },
+  {
+    path: 'start-quiz',
+    component: StartQuizComponent
+  },
+  {
+    path: 'quiz',
+    component: QuizComponent
   }
 ];
 
@@ -68,7 +78,9 @@ const routes: Routes = [
     BlogComponent,
     HometipComponent,
     HomeprodottoComponent,
-    ContattiComponent
+    ContattiComponent,
+    QuizComponent,
+    StartQuizComponent
   ],
   imports: [
     BrowserModule,

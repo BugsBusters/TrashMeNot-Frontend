@@ -3174,6 +3174,7 @@ nav ul li:nth-child(9) > ul {
   border-radius: 15px;
   background: #fff;
   height: 134px;
+  width: 251px;
   display: flex;
   justify-content:center;
   align-content:center;
