@@ -2,7 +2,7 @@
   <div class="sw_product_box_wrapper sw_shop_sider_pder">
     <div class="sw_product_indx_img_wrapper">
 
-      <img src="assets/images/prodotti/{{prodotto.id}}.jpg" alt="shop_img" class="img-responsive" />
+      <a routerLink="/prodotto"><img src="assets/images/prodotti/{{prodotto.id}}.jpg" alt="shop_img" class="img-responsive" /></a>
     </div>
 
     <div class="sw_product_indx_img_cont_wrapper sw_product_indx_img_cont_wrapper_2">
@@ -10,7 +10,7 @@
         <img src="assets/images/line.png" alt="img" />
       </div>
       <h5>€  {{prodotto.prezzo}}</h5>
-      <h1><a routerLink="/shop/prodotto">{{prodotto.descrizione}}</a></h1>
+      <h1><a routerLink="/prodotto">{{prodotto.descrizione}}</a></h1>
 
       <div class="cc_li_cont_wrapper">
         <i class="fa fa-star"></i>
