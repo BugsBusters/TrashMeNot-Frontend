@@ -17,6 +17,8 @@ import { CartComponent } from './cart/cart.component';
 import { TipComponent } from './tip/tip.component';
 import { BlogComponent } from './blog/blog.component';
 import { HttpClientModule} from '@angular/common/http';
+import { HometipComponent } from './hometip/hometip.component';
+import { HomeprodottoComponent } from './homeprodotto/homeprodotto.component';
 
 const routes: Routes = [
   {
@@ -58,7 +60,9 @@ const routes: Routes = [
     LoginComponent,
     CartComponent,
     TipComponent,
-    BlogComponent
+    BlogComponent,
+    HometipComponent,
+    HomeprodottoComponent
   ],
   imports: [
     BrowserModule,
