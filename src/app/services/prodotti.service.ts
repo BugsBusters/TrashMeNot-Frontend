@@ -14,7 +14,7 @@ export class ProdottiService {
 
 
   getAllTips() {
-    return this.http.get(this.baseUrl + 'prodotti');
+      return this.http.get(this.baseUrl + 'prodotti');
 
   }
 }

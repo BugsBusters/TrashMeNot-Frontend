@@ -20,6 +20,7 @@ import { HttpClientModule} from '@angular/common/http';
 import { HometipComponent } from './hometip/hometip.component';
 import { HomeprodottoComponent } from './homeprodotto/homeprodotto.component';
 import { ContattiComponent } from './contatti/contatti.component';
+import {FormsModule} from '@angular/forms';
 
 const routes: Routes = [
   {
@@ -73,6 +74,7 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     HttpClientModule,
+    FormsModule,
     RouterModule.forRoot(routes),
 
   ],
