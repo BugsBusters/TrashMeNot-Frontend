@@ -34,6 +34,10 @@ const routes: Routes = [
   {
     path: 'shop/prodotto',
     component: ProdottoComponent
+  },
+  {
+    path: 'login',
+    component: LoginComponent
   }
 ];
 
